@@ -1,1 +1,82 @@
+Intro to Offensive Security ||  Lab Access: https://tryhackme.com/room/introtooffensivesecurity
 
+
+1st — Open a terminal
+
+We can interact with a computer without using a graphical user interface by using a terminal, often known as the command-line. Using the Terminal icon on the system, open the terminal:
+
+
+Kali Linux’s Terminal Icon
+2nd — Find website pages that have been hidden
+
+The reason for this is that many businesses will have their own admin portal, which will give their employees access to basic admin controls for day-to-day activities.
+
+Example: A bank employee may transfer funds to and from client accounts.
+These pages are frequently not made private, allowing attackers to discover hidden pages that display or provide access to administrative controls or sensitive data.
+
+Command: gobuster -u <target> -w wordlist.txt dir
+-u = to state the website we're scanning
+-w = a list of words to iterate through to find hidden pages
+
+You’ll notice that GoBuster examines the website for each term in the list, locating existing pages.
+
+In the list of page/directory names, GoBuster will have told you the pages it found (indicated by Status: 200).
+
+3rd — Hack the bank
+
+You should have discovered a hidden bank transfer page (/bank-transfer) that allows you to transfer money across bank accounts. On the machine, type the hidden page into the FakeBank website.
+
+This page allows an attacker to steal money from any bank account, posing a serious risk to the organization. As an ethical hacker, you would uncover flaws in their program (with permission) and submit them to the bank so they could be fixed before a hacker exploited them.
+
+[Question 1.1] When you’ve transferred money to your account, go back to your bank account page. What is the answer shown on your bank balance page?
+
+You will see the page below after entering the IP address provided.
+
+
+Then go to the “hidden directory” you discovered and look for the “staff account,” which is the “admin portal” where you can transfer the money.
+
+
+
+When you’re finished, you’ll see “Success, transfer completed” on the screen.
+
+
+Finally, when you return to the main page, you’ll see “FakeBank’s Staff” transfer $2000 to your account, followed by the flag to the question.
+
+
+Answer: BANK-HACKED
+
+[Question 1.2] If you were a penetration tester or security consultant, this is an exercise you’d perform for companies to test for vulnerabilities in their web applications; find hidden pages to investigate for vulnerabilities.
+
+Answer: No answer is needed.
+
+[Question 1.3] Terminate the machine by clicking the red “Terminate” button at the top of the page.
+
+Answer: No answer is needed.
+
+
+Offensive Security — It is the process of gaining unauthorized access to computer systems by breaking into them, exploiting software defects, and identifying loopholes in programs.
+
+To defeat a hacker, you must act like a hacker, identifying flaws and offering patches ahead of a cybercriminal.
+Defensive security — On the other hand, is the act of safeguarding an organization’s network and computer systems by assessing and securing any potential digital threats.
+
+You could be analyzing infected systems or devices to figure out how they were hacked, chasing down cybercriminals, or monitoring infrastructure for dangerous activities in a defensive cyber position.
+
+[Question 2.1] Read the above.
+
+Answer: No answer is needed.
+
+
+BIG Question — How can I start learning?
+
+People often ask how others became hackers (security consultants) or defenders (cybercrime analysts), and the solution is straightforward. Break it down, pick a cyber security topic that interests you, and practice with hands-on exercises on a regular basis. Make it a habit to learn something new on TryHackMe every day, and you’ll have the skills you need to land your first job in the field.
+
+What careers are there?
+
+The cyber careers room goes into more depth about the different careers in cyber. However, here is a short description of a few offensive security roles:
+
+Penetration Tester — Responsible for testing technology products for finding exploitable security vulnerabilities.
+Red Teamer — Plays the role of an adversary, attacking an organization and providing feedback from an enemy’s perspective.
+Security Engineer — Design, monitor, and maintain security controls, networks, and systems to help prevent cyberattacks.
+[Question 3.1] Read the above, and continue with the next room!
+
+Answer: No answer is needed.
