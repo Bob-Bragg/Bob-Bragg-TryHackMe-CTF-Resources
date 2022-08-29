@@ -1,1 +1,125 @@
+Intro to Defensive Security ||  Lab Access: https://tryhackme.com/room/defensivesecurity
 
+
+Before we get into the “Defensive” side, let’s take a look at the “Offensive” side, which is all about “breaking into systems.”
+
+It could be accomplished, among other things, by exploiting defects, leveraging unsafe installations, and exploiting unenforced access control policies.
+Offensive security is handled by red teams and penetration testers.
+Defensive Security — Basically the contrary of “offensive.”
+
+Preventing intrusions from happening
+Detecting and responding to intrusions when they occur
+
+The following are some of the tasks associated with defensive security:
+
+User cyber security awareness — Educating users about cyber security can help them secure their systems from a variety of attacks.
+Documenting and managing assets — We must understand the many systems and gadgets that we must effectively manage and secure.
+Updating and patching systems — Ensure that all computers, servers, and network devices are up to date and patched against any known vulnerabilities (weakness).
+Setting up preventative security devices — Intrusion Prevention Systems (IPS) and firewalls are essential components of preventative security. Firewalls limit the amount of network traffic that can enter and depart a system or network. Any network traffic that matches the current rules and attack signatures is blocked by the IPS.
+Setting up logging and monitoring devices — It will be impossible to discover malicious actions and attacks without effective network logging and monitoring. We should be able to detect any new illegal devices that come on our network.
+In fact, the five pointers listed above are just a few of the nuggets; there are many more, including Security Operations Center (SOC), Threat Intelligence, Digital Forensics and Incident Response (DFIR), and Malware Analysis.
+
+[Question 1.1] Which team focuses on defensive security?
+
+Answer: Blue Team
+
+
+Security Operations Center (SOC) — It is carried out by a group of cyber security experts who monitor the network and its systems in order to discover malicious cyber security events.
+
+The following are some of the primary areas of interest for a SOC:
+
+Vulnerabilities — When a system vulnerability (weakness) is detected, it is critical to address it by applying a patch or update. When a remedy isn’t available, take the appropriate precautions to prevent an attacker from exploiting the flaw. Although vulnerability remediation is important to a SOC, it is not always assigned to them.
+Policy Violations — A security policy is a set of rules that must be followed in order to protect the network and systems. Users downloading confidential company data to an internet storage site, for example, could be a policy violation.
+Unauthorized Activity — Consider the situation in which a user’s login name and password are stolen and used by an attacker to gain access to the network. A SOC must recognize and block such an occurrence as quickly as possible to prevent further damage.
+Network Intrusion — There is always the possibility of an intrusion, no matter how solid your protection is. When a user clicks on a malicious link or an attacker abuses a public server, an intrusion occurs. In either case, we must notice an infiltration as soon as possible to avoid further damage.
+
+Threat Intelligence — It is accomplished through “Threat-Informed Defense,” which seeks to acquire actual or possible intelligence to enable the organization to better prepare against future enemies. Even though each attacker has a different objective, it is critical to obtain as much information as possible to avoid accidents from happening.
+
+
+Data is required for intelligence.
+
+It is necessary to collect, process, and analyze data.
+Data is gathered from both local and public sources, such as network logs and forums.
+The goal of data processing is to organize data into a format that can be analyzed.
+The goal of the analysis phase is to learn more about the attackers and their motivations, as well as to compile a list of recommendations and practical activities.
+You can learn about your opponents’ tactics, techniques, and procedures by learning about them. Threat intelligence allows us to identify the threat actor (adversary), predict their behaviour, and, as a result, minimize their attacks and plan a response strategy.
+
+Digital Forensics and Incident Response (DFIR)
+
+There are 3 components to this:
+1. Digital Forensics
+2. Incident Response
+3. Malware Analysis
+Digital Forensics — Science is used in forensics to investigate crimes and establish facts. With the widespread usage and adoption of digital devices such as computers and smartphones, a new field of forensics called computer forensics, which eventually evolved into digital forensics, was established to investigate associated crimes.
+
+Digital forensics now focuses on assessing evidence of an attack and its perpetrators, as well as additional issues including intellectual property theft, cyber espionage, and the possession of unlawful content.
+As a result, digital forensics will concentrate on a variety of topics, including:
+
+File System — Analyzing a digital forensics image (low-level duplicate) of a system’s storage exposes a wealth of information, including installed programs, produced files, partially overwritten data, and deleted files.
+System Memory — If the attacker is running their malicious program in memory rather than writing it to disk, the best way to evaluate its contents and learn about the attack is to create a forensic image (low-level copy) of the system memory.
+System Logs — Different log files about what is happening are kept on each client and server machine. Log files include a wealth of information about what occurred on a computer system. Even if the attacker tries to erase their traces, some will remain.
+Network Logs — Logs of network packets passing a network would help in answering more questions about whether or not an attack is taking place and what it comprises.
+Incident Response — A data breach or cyber attack is typically referred to as an incident; however, it can also refer to something less serious, such as a misconfiguration, an infiltration attempt, or a policy violation.
+
+An attacker rendering our network or systems inaccessible, defacing (altering) the public website, and data leak are all examples of cyber attacks (stealing company data).
+What would you do if you were targeted by a cyber-attack? The mechanism for dealing with such a situation is defined by incident response.
+The goal is to minimize harm and recover as quickly as possible. In an ideal world, you’d prepare an incident response strategy ahead of time.
+
+The incident response procedure is divided into four primary phases:
+
+Preparation — This needs a team that has been trained and is ready to respond to incidents. In an ideal world, different procedures would be implemented to prevent accidents from occurring in the first place.
+Detection and Analysis — The team has the resources to detect any issue; therefore, it is critical to investigate each discovered incident further to determine its seriousness.
+Containment, Eradication, and Recovery — Once an incident has been identified, it is critical to stop it from spreading to other systems, eradicate it, and restore the systems that have been impacted. For example, if we discover that a system has been infected with a computer virus, we want to prevent the virus from spreading to other systems, clean (eradicate) the virus, and ensure that the system is properly recovered.
+Post-Incident Activity — After a successful recovery, a report is created, and the lesson learned is communicated in order to prevent similar situations in the future.
+Malware Analysis — Malware is a term that refers to malicious software. Programs, documents, and data that you can save on a disk or send over the network are referred to as software.
+
+The following are just a few examples of malware:
+
+Virus — A piece of code (part of a program) that connects to another program. It is designed to spread from one machine to another; also, once infected, it modifies, overwrites, and deletes files. The computer may become slow or unusable as a result.
+Trojan Horse — A program that displays one useful feature while concealing a dangerous feature underneath. A victim might, for example, download a video player from a dodgy website, giving the attacker complete access to their system.
+Ransomware — This is a malicious application that encrypts the files of the user. Without knowing the encryption password, the data are rendered inaccessible. If the user is willing to pay a “ransom,” the attacker will give them the encryption password.
+
+Malware analysis seeks to learn about malicious programs through a variety of methods, including:
+
+Static Analysis — simply looking through the malicious program without running it This usually necessitates a thorough understanding of assembly language (the processor’s instruction set, or the computer’s fundamental commands).
+Dynamic Analysis — by monitoring the malware’s actions and operating it in a controlled environment. It allows you to watch how the malware operates when it is active.
+[Question 2.1] What would you call a team of cyber security professionals that monitors a network and its systems for malicious events?
+
+Answer: Security Operations Center
+
+[Question 2.2] What does DFIR stand for?
+
+Answer: Digital Forensics Incident Response
+
+[Question 2.3] Which kind of malware requires the user to pay money to regain access to their files?
+
+Answer: Ransomware
+
+
+1st — Access to the SIEM Dashboard
+
+
+2nd — Only one “Alert Log” appears to be highlighted in “Red Color” out of the five.
+
+
+3rd — Copy the IP Address
+
+143.110.250.149
+4th — Paste the IP Address
+
+
+5th — Result Found!
+
+
+There are various open-source databases, such as AbuseIPDB and Cisco Talos Intelligence, where you may examine the IP address’s reputation and location. These tools are used by the majority of security analysts to assist them with alert investigations. You can also help to make the Internet safer by reporting malicious IP addresses to sites like AbuseIPDB.
+
+6th —Select a person to whom the incident should be escalated.
+
+
+7th — Add the Malicious IP Address to Firewall Block List
+
+
+8th — Flag appeared!
+
+
+Answer: THM{THREAT-BLOCKED}
